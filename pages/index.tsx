@@ -45,7 +45,7 @@ export default function Home() {
               {data.map((row, idx) => (
                 <tr key={idx}>
                   {Object.values(row).map((val, idy) => (
-                    <td key={idy} className="px-2 py-1 border border-gray-300">{val}</td>
+                    <td key={idy} className="px-2 py-1 border border-gray-300">{val as React.ReactNode}</td>
                   ))}
                 </tr>
               ))}
